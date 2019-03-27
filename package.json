@@ -2,7 +2,7 @@
   "name": "glo-board-api-node",
   "version": "1.0.0",
   "description": "A Node.js wrapper for GitKraken's Glo Board API",
-  "main": "./src/server.js",
+  "main": "src/index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
@@ -22,5 +22,8 @@
   "bugs": {
     "url": "https://github.com/mlichtblau/glo-board-api-node/issues"
   },
-  "homepage": "https://github.com/mlichtblau/glo-board-api-node#readme"
+  "homepage": "https://github.com/mlichtblau/glo-board-api-node#readme",
+  "dependencies": {
+    "superagent": "^4.1.0"
+  }
 }
