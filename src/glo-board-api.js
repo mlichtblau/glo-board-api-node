@@ -382,7 +382,7 @@ GloBoardAPI.prototype = {
    */
   createComment: function (boardId, cardId, comment) {
     return ApiRequest.builder(this.getAccessToken())
-      .withPath('/v1/glo/boards/' + boardId + '/cards/' + cardId)
+      .withPath('/v1/glo/boards/' + boardId + '/cards/' + cardId + '/comments')
       .withHeaders({ 'Content-Type': 'application/json' })
       .withBodyParameters(comment)
       .build()
